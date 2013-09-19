@@ -1,6 +1,6 @@
 #Retrogram
 
-Retrofit (Square) based Instagram client for Java and Android
+[Retrofit](https://github.com/square/retrofit) ([Square](http://square.github.io/)) based Instagram client for Java and Android
 
 #Download
 

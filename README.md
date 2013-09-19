@@ -2,6 +2,16 @@
 
 Retrofit (Square) based Instagram client for Java and Android
 
+#Download
+
+```
+<dependency>
+    <groupId>com.getinch.retrogram</groupId>
+    <artifactId>retrogram</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+
 #Usage
 
 First you need to acquire an access token. You can authenticate the user by displaying the standard Instagram OAuth2 login screen. You can build the url with the following method:

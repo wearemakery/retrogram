@@ -25,7 +25,7 @@
     <scm>
         <url>https://github.com/getinch/retrogram</url>
         <connection>scm:git:https://github.com/getinch/retrogram.git</connection>
-        <developerConnection>scm:git:git@github.com/getinch/retrogram.git</developerConnection>
+        <developerConnection>scm:git:getinch@github.com/getinch/retrogram.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 

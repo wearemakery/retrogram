@@ -9,6 +9,18 @@ import org.junit.runners.JUnit4;
 public final class UsersEndpointTest extends BaseTestCase {
 
     @Test
+    public void getSelf() {
+        final User user = instagram.getUsersEndpoint().getSelf();
+        logger.info("bio: {}", user.getBio());
+        logger.info("full name: {}", user.getFullName());
+        logger.info("id: {}", user.getId());
+        logger.info("profile picture: {}", user.getProfilePicture());
+        logger.info("profile name: {}", user.getUsername());
+        logger.info("website: {}", user.getWebsite());
+        assertNotNull(user);
+    }
+
+    @Test
     public void getProfile() {
         final User user = instagram.getUsersEndpoint().getUser(UserId);
         logger.info("bio: {}", user.getBio());

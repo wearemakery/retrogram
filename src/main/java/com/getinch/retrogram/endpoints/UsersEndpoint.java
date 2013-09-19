@@ -54,6 +54,10 @@ public final class UsersEndpoint extends BaseEndpoint {
         userService = restAdapter.create(UserService.class);
     }
 
+    public User getSelf() {
+        return userService.getUser("self", accessToken).getUser();
+    }
+
     public User getUser(final String userId) {
         return userService.getUser(userId, accessToken).getUser();
     }

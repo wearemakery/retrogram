@@ -46,7 +46,7 @@ public abstract class BaseTestCase extends TestCase {
         UserId2 = System.getProperty("user.id2") == null ? "3" : System.getProperty("user.id2");
         UserName = System.getProperty("user.name") == null ? "jack" : System.getProperty("user.name");
         CommentId = System.getProperty("comment.id") == null ? "555" : System.getProperty("comment.id");
-        MediaId = System.getProperty("media.id") == null ? "3" : System.getProperty("media.id");
+        MediaId = System.getProperty("media.id") == null ? "123" : System.getProperty("media.id");
         TagName = System.getProperty("tag.name") == null ? "swag" : System.getProperty("tag.name");
         LocationId = System.getProperty("location.id") == null ? "1" : System.getProperty("location.id");
         RedirectUrl = System.getProperty("redirect.url") == null ? "http://localhost" : System.getProperty("redirect.url");

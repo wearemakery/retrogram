@@ -34,22 +34,22 @@ public abstract class BaseTestCase extends TestCase {
     @BeforeClass
     public static void setupBeforeClass() {
         // mandatory
-        AccessToken = System.getProperty("access_token");
-        ClientId = System.getProperty("client_id");
+        AccessToken = System.getProperty("access.token");
+        ClientId = System.getProperty("client.id");
 
         if (AccessToken == null || ClientId == null) {
-            throw new RuntimeException("access_token and client_id parameters must be set, use -Daccess_token and -Dclient_id arguments");
+            throw new RuntimeException("access.token and client.id parameters must be set, use -Daccess.token and -Dclient.id arguments");
         }
 
         // optional
-        UserId = System.getProperty("user_id") == null ? "1574083" : System.getProperty("user_id");
-        UserId2 = System.getProperty("user_id2") == null ? "3" : System.getProperty("user_id2");
-        UserName = System.getProperty("user_name") == null ? "jack" : System.getProperty("user_name");
-        CommentId = System.getProperty("comment_id") == null ? "555" : System.getProperty("comment_id");
-        MediaId = System.getProperty("media_id") == null ? "3" : System.getProperty("media_id");
-        TagName = System.getProperty("tag_name") == null ? "swag" : System.getProperty("tag_name");
-        LocationId = System.getProperty("location_id") == null ? "1" : System.getProperty("location_id");
-        RedirectUrl = System.getProperty("redirect_url") == null ? "http://localhost" : System.getProperty("redirect_url");
+        UserId = System.getProperty("user.id") == null ? "1574083" : System.getProperty("user.id");
+        UserId2 = System.getProperty("user.id2") == null ? "3" : System.getProperty("user.id2");
+        UserName = System.getProperty("user.name") == null ? "jack" : System.getProperty("user.name");
+        CommentId = System.getProperty("comment.id") == null ? "555" : System.getProperty("comment.id");
+        MediaId = System.getProperty("media.id") == null ? "3" : System.getProperty("media.id");
+        TagName = System.getProperty("tag.name") == null ? "swag" : System.getProperty("tag.name");
+        LocationId = System.getProperty("location.id") == null ? "1" : System.getProperty("location.id");
+        RedirectUrl = System.getProperty("redirect.url") == null ? "http://localhost" : System.getProperty("redirect.url");
 
         try {
             Latitude = Double.valueOf(System.getProperty("lat"));

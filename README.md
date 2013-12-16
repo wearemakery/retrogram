@@ -34,7 +34,7 @@ final User user = instagram.getUsersEndpoint().getUser(userId);
 
 #Building
 
-If you want to hack into the code, feel free to fork the repository. Pull requests are welcome! Please make sure tests completing successfully.
+If you want to hack into the code, feel free to fork the repository. Pull requests are welcome! Please make sure tests complete successfully.
 
 ```
 mvn clean test -Daccess.token={your access token} -Dclient.id={your client id}

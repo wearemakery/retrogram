@@ -50,7 +50,7 @@ public final class UsersEndpoint extends BaseEndpoint {
 
     public UsersEndpoint(final String accessToken, final RestAdapter.LogLevel logLevel) {
         super(accessToken, logLevel);
-        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setServer(BaseUrl).build();
+        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setEndpoint(BASE_URL).build();
         userService = restAdapter.create(UserService.class);
     }
 

@@ -40,7 +40,7 @@ public final class RelationshipsEndpoint extends BaseEndpoint {
 
     public RelationshipsEndpoint(String accessToken, final RestAdapter.LogLevel logLevel) {
         super(accessToken, logLevel);
-        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setServer(BaseUrl).build();
+        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setEndpoint(BASE_URL).build();
         relationshipService = restAdapter.create(RelationshipService.class);
     }
 

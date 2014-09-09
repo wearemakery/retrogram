@@ -38,7 +38,7 @@ public class TagsEndpoint extends BaseEndpoint {
 
     public TagsEndpoint(final String accessToken, final RestAdapter.LogLevel logLevel) {
         super(accessToken, logLevel);
-        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setServer(BaseUrl).build();
+        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setEndpoint(BASE_URL).build();
         tagsService = restAdapter.create(TagsService.class);
     }
 

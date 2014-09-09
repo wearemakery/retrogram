@@ -37,7 +37,7 @@ public class MediaEndpoint extends BaseEndpoint {
 
     public MediaEndpoint(final String accessToken, final RestAdapter.LogLevel logLevel) {
         super(accessToken, logLevel);
-        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setServer(BaseUrl).build();
+        final RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(logLevel).setEndpoint(BASE_URL).build();
         mediaService = restAdapter.create(MediaService.class);
     }
 

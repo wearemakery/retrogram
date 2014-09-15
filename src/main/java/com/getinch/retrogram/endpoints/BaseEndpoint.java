@@ -4,7 +4,7 @@ import retrofit.RestAdapter;
 
 public abstract class BaseEndpoint {
 
-    protected static final String BaseUrl = "https://api.instagram.com/v1";
+    protected static final String BASE_URL = "https://api.instagram.com/v1";
 
     protected final String accessToken;
     protected final RestAdapter.LogLevel logLevel;
